@@ -1,0 +1,18 @@
+name: crystal_clear
+version: 0.1.0
+
+authors:
+  - Taff Gao <gaotongfei1995@gmail.com>
+
+targets:
+  crystal_clear:
+    main: src/crystal_clear.cr
+
+crystal: 0.21.1
+
+license: MIT
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+    branch: master
