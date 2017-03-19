@@ -2,7 +2,10 @@ require "kemal"
 require "./crystal_clear/*"
 
 module CrystalClear
-  ws "/" do |socket|
+  get "/" do
+    render "src/views/index.ecr", "src/views/layouts/layout.ecr"
+  end
+  ws "/ws" do |socket|
     socket.send "Hello from kemal"
 
     socket.on_message do |message|
